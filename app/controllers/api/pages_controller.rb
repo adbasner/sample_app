@@ -14,4 +14,8 @@ class Api::PagesController < ApplicationController
     @dog_name = "Thor"
     render "dog_name_view.json.jbuilder"
   end
+
+  def index_action
+    render "index.html"
+  end
 end
