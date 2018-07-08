@@ -1,5 +1,9 @@
 class Api::PagesController < ApplicationController
 
+  def index
+    render 'index.html.erb'
+  end
+  
   def first_name_action
     @first_name = "Andrew"
     render "first_name_view.json.jbuilder"
